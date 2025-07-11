@@ -385,6 +385,8 @@ where
             .map_err(|_| ValidationApiError::InvalidBlobsBundle)?
             .validate(&versioned_hashes, EnvKzgSettings::default().get())?;
 
+        info!("BHARATH: validate_blobs_bundle_v2: after validate");
+
         Ok(versioned_hashes)
     }
 
