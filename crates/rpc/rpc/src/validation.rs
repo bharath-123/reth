@@ -371,21 +371,16 @@ where
         &self,
         blobs_bundle: BlobsBundleV2,
     ) -> Result<Vec<B256>, ValidationApiError> {
-        info!("BHARATH: validate_blobs_bundle_v2");
         let versioned_hashes = blobs_bundle
             .commitments
             .iter()
             .map(|c| kzg_to_versioned_hash(c.as_slice()))
             .collect::<Vec<_>>();
 
-        info!("BHARATH: validate_blobs_bundle_v2: versioned_hashes: {:?}", versioned_hashes);
-
         blobs_bundle
             .try_into_sidecar()
             .map_err(|_| ValidationApiError::InvalidBlobsBundle)?
             .validate(&versioned_hashes, EnvKzgSettings::default().get())?;
-
-        info!("BHARATH: validate_blobs_bundle_v2: after validate");
 
         Ok(versioned_hashes)
     }
@@ -444,7 +439,6 @@ where
         &self,
         request: BuilderBlockValidationRequestV5,
     ) -> Result<(), ValidationApiError> {
-        info!("BHARATH: validate_builder_submission_v5");
         let block = self.payload_validator.ensure_well_formed_payload(ExecutionData {
             payload: ExecutionPayload::V3(request.request.execution_payload),
             sidecar: ExecutionPayloadSidecar::v4(
