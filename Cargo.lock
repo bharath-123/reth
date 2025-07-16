@@ -1328,9 +1328,9 @@ dependencies = [
 
 [[package]]
 name = "async-compression"
-version = "0.4.25"
+version = "0.4.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "40f6024f3f856663b45fd0c9b6f2024034a702f453549449e0d84a305900dad4"
+checksum = "ddb939d66e4ae03cee6091612804ba446b12878410cfa17f785f4dd67d4014e8"
 dependencies = [
  "brotli",
  "flate2",
@@ -1989,9 +1989,9 @@ checksum = "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
 
 [[package]]
 name = "castaway"
-version = "0.2.3"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0abae9be0aaf9ea96a3b1b8b1b55c602ca751eba1b1500220cea4ecbafe7c0d5"
+checksum = "dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a"
 dependencies = [
  "rustversion",
 ]
@@ -2438,9 +2438,9 @@ checksum = "19d374276b40fb8bbdee95aef7c7fa6b5316ec764510eb64b8dd0e2ed0d7e7f5"
 
 [[package]]
 name = "crc32fast"
-version = "1.4.2"
+version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a97769d94ddab943e4510d138150169a2758b5ef3eb191a9ee688de3e23ef7b3"
+checksum = "9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511"
 dependencies = [
  "cfg-if",
 ]
@@ -5468,9 +5468,9 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 
 [[package]]
 name = "memmap2"
-version = "0.9.5"
+version = "0.9.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd3f7eed9d3848f8b98834af67102b720745c4ec028fcd0aa0239277e7de374f"
+checksum = "483758ad303d734cec05e5c12b41d7e93e6a6390c5e9dae6bdeb7c1259012d28"
 dependencies = [
  "libc",
 ]
@@ -6054,7 +6054,7 @@ dependencies = [
 [[package]]
 name = "op-revm"
 version = "8.0.2"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "auto_impl",
  "once_cell",
@@ -7047,9 +7047,9 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 
 [[package]]
 name = "regress"
-version = "0.10.3"
+version = "0.10.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "78ef7fa9ed0256d64a688a3747d0fef7a88851c18a5e1d57f115f38ec2e09366"
+checksum = "145bb27393fe455dd64d6cbc8d059adfa392590a45eadf079c01b11857e7b010"
 dependencies = [
  "hashbrown 0.15.4",
  "memchr",
@@ -10613,7 +10613,7 @@ dependencies = [
 [[package]]
 name = "revm"
 version = "27.0.2"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "revm-bytecode",
  "revm-context",
@@ -10631,7 +10631,7 @@ dependencies = [
 [[package]]
 name = "revm-bytecode"
 version = "6.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "bitvec",
  "once_cell",
@@ -10643,7 +10643,7 @@ dependencies = [
 [[package]]
 name = "revm-context"
 version = "8.0.2"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "cfg-if",
  "derive-where",
@@ -10658,7 +10658,7 @@ dependencies = [
 [[package]]
 name = "revm-context-interface"
 version = "8.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "alloy-eip2930",
  "alloy-eip7702",
@@ -10673,7 +10673,7 @@ dependencies = [
 [[package]]
 name = "revm-database"
 version = "7.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "alloy-eips",
  "revm-bytecode",
@@ -10686,7 +10686,7 @@ dependencies = [
 [[package]]
 name = "revm-database-interface"
 version = "7.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "auto_impl",
  "either",
@@ -10698,7 +10698,7 @@ dependencies = [
 [[package]]
 name = "revm-handler"
 version = "8.0.2"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "auto_impl",
  "derive-where",
@@ -10716,7 +10716,7 @@ dependencies = [
 [[package]]
 name = "revm-inspector"
 version = "8.0.2"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "auto_impl",
  "either",
@@ -10753,7 +10753,7 @@ dependencies = [
 [[package]]
 name = "revm-interpreter"
 version = "23.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "revm-bytecode",
  "revm-context-interface",
@@ -10764,7 +10764,7 @@ dependencies = [
 [[package]]
 name = "revm-precompile"
 version = "24.0.0"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "ark-bls12-381",
  "ark-bn254",
@@ -10790,7 +10790,7 @@ dependencies = [
 [[package]]
 name = "revm-primitives"
 version = "20.0.0"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "alloy-primitives",
  "num_enum",
@@ -10800,7 +10800,7 @@ dependencies = [
 [[package]]
 name = "revm-state"
 version = "7.0.1"
-source = "git+https://github.com/bluealloy/revm?branch=rakita%2Fcontract_size_limit#37edc381a940a52abb90b3e0a480292a675e8129"
+source = "git+https://github.com/bluealloy/revm?branch=rakita%2Feip7907#37edc381a940a52abb90b3e0a480292a675e8129"
 dependencies = [
  "bitflags 2.9.1",
  "revm-bytecode",
@@ -11049,15 +11049,15 @@ dependencies = [
 
 [[package]]
 name = "rustix"
-version = "1.0.7"
+version = "1.0.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c71e83d6afe7ff64890ec6b71d6a69bb8a610ab78ce364b3352876bb4c801266"
+checksum = "11181fbabf243db407ef8df94a6ce0b2f9a733bd8be4ad02b4eda9602296cac8"
 dependencies = [
  "bitflags 2.9.1",
  "errno",
  "libc",
  "linux-raw-sys 0.9.4",
- "windows-sys 0.59.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -11905,7 +11905,7 @@ dependencies = [
  "fastrand 2.3.0",
  "getrandom 0.3.3",
  "once_cell",
- "rustix 1.0.7",
+ "rustix 1.0.8",
  "windows-sys 0.59.0",
 ]
 
@@ -13626,9 +13626,9 @@ checksum = "271414315aff87387382ec3d271b52d7ae78726f5d44ac98b4f4030c91880486"
 
 [[package]]
 name = "winnow"
-version = "0.7.11"
+version = "0.7.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "74c7b26e3480b707944fc872477815d29a8e429d2f93a1ce000f5fa84a15cbcd"
+checksum = "f3edebf492c8125044983378ecb5766203ad3b4c2f7a922bd7dd207f6d443e95"
 dependencies = [
  "memchr",
 ]
@@ -13705,7 +13705,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af3a19837351dc82ba89f8a125e22a3c475f05aba604acc023d62b2739ae2909"
 dependencies = [
  "libc",
- "rustix 1.0.7",
+ "rustix 1.0.8",
 ]
 
 [[package]]
