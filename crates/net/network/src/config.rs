@@ -252,7 +252,7 @@ impl<N: NetworkPrimitives> NetworkConfigBuilder<N> {
             hello_message: None,
             extra_protocols: Default::default(),
             head: None,
-            tx_gossip_disabled: false,
+            tx_gossip_disabled: true,
             block_import: None,
             transactions_manager_config: Default::default(),
             nat: None,
